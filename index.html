@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/myStyle.css">
+    <title>MemoryGame</title>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+            
+            <div class="name">
+                Hello: <span></span>
+            </div>
+            <div class="timer">00:00</div>
+            <div class="tries">
+                Wrong Tries: <span>0</span>
+            </div>
+        </div>
+    </div>
+    <!-------------- loser div ------------------->
+    <div class="loser">
+        <div>
+            <p>I'm Sorry you lost</p>
+        <div class="again">play again</div>
+        </div>
+        
+    </div>
+    <div class="memory-game-blocks"> </div>
+<div class="control-buttons">
+    <div class="box">
+        <h1>What's your name?</h1>
+        <input type="text" class="name-input">
+      
+        <h1>Enter number of blocks (even number less than 30) : </h1>
+        <input type="text" class="blocks-number">
+
+        <span>Start Game</span>
+    </div>
+</div>
+
+
+
+
+
+<footer>
+    Designed & Programmed By Mohamed Atef Frontend Developer
+</footer>
+<audio id="success" src="sound/success.mp3" preload="auto"></audio>
+<audio id="game-sound" src="sound/soundGame.mp3" preload="auto" loop ></audio>
+<audio id="fail" src="sound/failsound.mp3" preload="auto"></audio>
+<audio id="winning" src="sound/winningsound.mp3" preload="auto"></audio>
+
+
+
+<script src="js/love.js"></script>
+<!-- <script src="js/all.min.js"></script> -->
+</body>
+</html>
